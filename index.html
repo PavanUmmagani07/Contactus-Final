@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us Final</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!--NAVBAR-->
+    <nav>
+        <ul class="sidebar">
+            <li onclick="hideSidebar()" ><a href="#"><img src="images/Close_Menu.svg"/></a></li>
+            <li class="navbar-items"><a href="#">Company</a></li>
+            <li class="navbar-items"><a href="#">Products</a></li>
+            <li class="navbar-items"><a href="#">Solutions</a></li>
+            <li class="navbar-items"> <a href="#">Insights</a></li>
+            <li class="navbar-items"><a href="#">Contact Us</a></li>
+            <li><button class="nav-button-sidebar">Talk to a Specialist</button></li>
+    
+        </ul>
+    
+        <ul>
+            <li><a href="#"><img src="images/procal-logo.svg"/></a></li>
+            <li class="hideOnMobile navbar-items"><a href="#">Company</a></li>
+            <li class="hideOnMobile navbar-items"><a href="#">Products</a></li>
+            <li class="hideOnMobile navbar-items"><a href="#">Solutions</a></li>
+            <li class="hideOnMobile navbar-items"> <a href="#">Insights</a></li>
+            <li class="hideOnMobile navbar-items"><a href="#">Contact Us</a></li>
+            <li class="hideOnMobile"><button class="nav-button">Talk to a Specialist</button></li>
+            <li class="menu-button" onclick="showSidebar()"><a href="#"><img src="images/Menu.svg"/></a></li>
+        </ul>
+    </nav>
+
+    <!--Banner Section-->
+    <div class="banner-section">
+        <div class="banner-context">
+            <div class="banner-sub-container">
+                <h1 class="banner-title">Contact Us</h1>
+            </div>
+            <div class="banner-sub-container">
+                <h2 class="banner-subtitle">Address</h2>
+                <p class="banner-para">92 East Main Street, Suite:405 Somerville, </br>
+                    New Jersey 08876 United States.</p>
+            </div>
+            <div class="banner-sub-container">
+                <h2 class="banner-subtitle">Phone Number</h2>
+                <p class="banner-para">(732)-568-4786</p>
+            </div>
+        </div>
+    </div>
+
+    <!--Form Container-->
+    <div class="form-section">
+        <div class="form-description">
+            <h3 class="form-title">We want to hear from you!</h3>
+            <p class="form-para">Fill out our form and a Procal expert will reach out to you</p>
+            <p id="submitStatusMsg"></p>
+        </div>
+    
+        <form id="contactUsForm">
+            <div class="first-row">
+                <div class="left-input">
+                    <input type="text" placeholder="First Name" class="input-text" id="firstName"/>
+                    <p id="firstNameErrorMsg"></p>
+                </div>
+            
+                <div class="right-input">
+                    <input type="text" placeholder="Last Name" class="input-text" id="lastName"/>
+                    <p id="lastNameErrorMsg"></p>
+                </div>
+            </div>
+
+            <div class="second-row">
+                <div class="left-input">
+                    <input type="email" placeholder="Email" class="input-text" id="email"/>
+                    <p id="emailErrorMsg"></p>
+                </div>
+
+                <div class="right-input">
+                    <input type="tel" placeholder="Mobile Number" class="input-text" id="mobileNumber"/>
+                    <p id="mobileNumberErrorMsg"></p>
+                </div>
+            </div>
+            
+            <input type="text" placeholder="Your Inquriy or Comments" class="input-text" id="comments"/>
+            <p id="commentsErrorMsg"></p>
+
+            <div class="checkbox-container">    
+                <input type="checkbox"  class="checkbox" id="checkBox"/>
+                <label for="checkBox" class="checkbox-content"> I consent to PROCAL Systems, INC. processing my personal information as set out in the Privacy Policy and Cookie Policy and that, given the global nature of PROCAL’s business, such processing may take place outside of my home jurisdiction.*</label>
+                <p id="checkboxErrorMsg"></p>
+            </div>
+
+            <div class="btn-container">
+                <button type="submit" class="submit-btn">SUBMIT MY FORM</button>
+            </div>
+
+        </form>
+    </div>
+
+    <!--Location Section-->
+    <div class="location-container">
+        <div class="location-title">
+            <h3 class="location-head">Our Locations</h3>
+            <p class="location-description">Our diverse team brings a world of unique perspectives and niche capabilities to every project we undertake, serving clients worldwide with unparalleled dedication and excellence. Discover how our global presence enables us to deliver tailor-made solutions that transcend borders and exceed expectations.</p>
+        </div>
+
+        <div class="locations-section">
+            <div class="location">
+                <img src="./images/america.jpg" alt="North America" class="location-img">
+                <h4 class="location-name">North America</h4>
+            </div>
+
+            <div class="location">
+                <img src="./images/europe.jpg" alt="Europe" class="location-img">
+                <h4 class="location-name">Europe</h4>
+            </div>
+
+            <div class="location">
+                <img src="./images/asia.jpg" alt="Asia" class="location-img">
+                <h4 class="location-name">Asia</h4>
+            </div>
+
+            <div class="location">
+                <img src="./images/Middle-east.jpg" alt="Middle East" class="location-img">
+                <h4 class="location-name">Middle East</h4>
+            </div>
+        </div>
+
+        <hr/>
+            <div class="country-locations" id ="americaOffices">
+                <div class="Office-location">
+                    <h4 class="location-name">New Jersey</h4>
+                    <p class="office-address">92 East Main Street Suite:405</br>
+                        Somerville, New Jersey 08876</br>
+                        United States
+                    </p>
+                </div>
+                
+                <div class="Office-location">
+                    <h4 class="location-name">New Jersey</h4>
+                    <p class="office-address">324 Courtyard Drive,</br>
+                        Hillsborough, NJ 08844
+                    </p>
+                </div>
+                
+                <div class="Office-location">
+                    <h4 class="location-name">Illionois</h4>
+                    <p class="office-address">4255 Westbrook Dr Unit 222</br>
+                        Illinois 60504</br>
+                        United States
+                    </p>
+                </div>
+                
+                <div class="Office-location">
+                    <h4 class="location-name">Texas</h4>
+                    <p class="office-address">3401 Cluster Rd Plano, Texas 75023</br>
+                        United States
+                    </p>
+                </div>
+                
+            </div>
+    </div>
+
+    <!--Footer Section-->
+    <footer class="footer">
+        <div class="footer-container">
+            <!--Procal-Item-Container-->
+            <div class="item-container">
+                <img src="../images/procal-logo.svg">
+                <p class="footer-items">At Procal, our mission is to empower businesses with cutting-edge technology solutions and services that drive growth and innovation</p>
+                </br>
+                <p class="footer-items">Address</p>
+                <p class="footer-items">92 East Main Street, Suite:405 Somerville,</br>
+                    New Jersey 08876</br>
+                    United States.
+                </p>
+                </br>
+                <p class="footer-items">Phone Number</p>
+                <p class="footer-items">7325684786</p>
+                <p class="footer-items">9082554135</p>
+                </br>
+                <p class="footer-items">Contact mail</p>
+                <p class="footer-items"><a href="https://mail.google.com/mail/u/0/#inbox?compose=new">info@procaltech.com</a></p>
+            </div>
+
+            <!--Who are we Container-->
+            <div class="item-container">
+                <h5 class="title">Who are we</h5>
+                <ul>
+                    <li class="footer-items list-style"><a href="https://procaltech.com/who-we-are/#our-mission" target="_blank">Our Mission</a></li>
+                    <li class="footer-items list-style"><a href="https://procaltech.com/who-we-are/#our-vision" target="_blank">Our Vision</a></li>
+                    <li class="footer-items list-style"><a href="https://procaltech.com/who-we-are/#our-commitments" target="_blank">Our Commitments</a></li>
+                    <li class="footer-items list-style"><a href="https://procaltech.com/who-we-are/#our-locations" target="_blank">Our Locations</a></li>
+                    <li class="footer-items list-style"><a href="https://procaltech.com/contact-us/" target="_blank">Contact Us</a></li>
+                    <li class="footer-items list-style"><a href="https://procaltech.com/insights/" target="_blank">Insights</a></li>
+                </ul>
+            </div>
+    
+            <!--What We do Container-->
+            <div class="item-container">
+                <h5 class="title">What we do</h5>
+                <ul>
+                    <li class="footer-items list-style"><a href="https://procaltech.com/what-we-do/#Our-Clients">Our Clients</a></li>
+                    <li class="footer-items list-style"><a href="https://procaltech.com/what-we-do/#Our-industries">Our Industries</a></li>
+                    <li class="footer-items list-style"><a href="https://procaltech.com/what-we-do/#Our-Methodologies">Our Methodoliges</a></li>
+                    <li class="footer-items list-style"><a href="https://procaltech.com/what-we-do/#Our-Partnerships">Our Patrnerships</a></li>
+                </ul>
+            </div>
+    
+            <!--Products Container-->
+            <div class="item-container">
+                <h5 class="title">Who are we</h5>
+                <ul>
+                    <li class="footer-items list-style"><a href="https://procaltech.com/products/snap-automation/">Snap Automation</a></li>
+                    <li class="footer-items list-style"><a href="https://procaltech.com/products/spot-finder/">Artemis</a></li>
+                    <li class="footer-items list-style"><a href="https://procaltech.com/products/spot-finder/">Spot Finder</a></li>
+                </ul>
+            </div>
+    
+            <!--Solutions Container-->
+            <div class="item-container">
+                <h5 class="title">Solutions</h5>
+                <ul>
+                    <li class="footer-items list-style"><a href="#">Telecom Solutions</a></li>
+                    <li class="footer-items list-style"><a href="https://www.procaltech.com/solutions/emerging-technologies/">Emerging Technologies</a></li>
+                    <li class="footer-items list-style"><a href="https://www.procaltech.com/solutions/automation-testing/">Automation</a></li>
+                    <li class="footer-items list-style"><a href="https://www.procaltech.com/solutions/data-analytics-and-insights/">Data Insights and Analytics</a></li>
+                    <li class="footer-items list-style"><a href="https://www.procaltech.com/solutions/financial/">Financial Services</a></li>
+                </ul>
+            </div>
+    
+            <!--Cyber Security Container-->
+            <div class="item-container">
+                <h5 class="title">Cyber Security</h5>
+                <ul>
+                    <li class="footer-items list-style"><a href="https://procaltech.com/solutions/penetration-testing/">Penetration Testing</a></li>
+                    <li class="footer-items list-style"><a href="https://procaltech.com/solutions/ransomware-health-checks/">Ransomeware health checks</a></li>
+                    <li class="footer-items list-style"><a href="https://procaltech.com/solutions/security-frameworks-compliance/">Security frameworks and compliance</a></li>
+                    <li class="footer-items list-style"><a href="https://procaltech.com/solutions/managed-security-services/">Managed Security Services</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+ 
+    <script src="contactus.js" charset="UTF-8"></script>
+</body>
+</html>
