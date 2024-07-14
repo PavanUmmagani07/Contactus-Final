@@ -5,7 +5,7 @@
 
 body{
     min-height: 100vh;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;
 }
 
 /*NAVBAR*/
@@ -213,6 +213,12 @@ nav li:first-child{
         color: #373A40;
         font-size: 16px;
     }
+    .location-img-card{
+        background-color: #fff;
+        height: 250px;
+        width: 350px;
+        padding-bottom: 16px;
+    }
     /*Footer-section*/
     .footer{
         background-color: #000000;
@@ -391,6 +397,16 @@ nav li:first-child{
         color: #373A40;
         font-size: 16px;
     }
+    .location-img-card{
+        background-color: #ffffff;
+        width: 300px;
+        height: 210px;
+        text-align: center;
+        padding:15px;
+        border-radius: 12px;
+        margin-left: 15px;
+        margin-bottom: 15px;
+    }
     /*Footer-section*/
     .footer{
         background-color: #000000;
@@ -564,6 +580,15 @@ nav li:first-child{
         display: flex;
         flex-direction: row;
         justify-content: space-around;
+    }
+    .location-img-card{
+        background-color: #ffffff;
+        width: 500px;
+        height: 300px;
+        text-align: center;
+        padding: 30px;
+        border-radius: 12px;
+        margin-bottom: 15px;
     }
     /*Footer Section*/
     .footer{

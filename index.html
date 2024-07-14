@@ -5,6 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Us Final</title>
     <link rel="stylesheet" href="style.css">
+
+    <!--BootStrap CDN-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
 </head>
 <body>
     <!--NAVBAR-->
@@ -87,8 +93,8 @@
             <p id="commentsErrorMsg"></p>
 
             <div class="checkbox-container">    
-                <input type="checkbox"  class="checkbox" id="checkBox"/>
-                <label for="checkBox" class="checkbox-content"> I consent to PROCAL Systems, INC. processing my personal information as set out in the Privacy Policy and Cookie Policy and that, given the global nature of PROCAL’s business, such processing may take place outside of my home jurisdiction.*</label>
+                <input type="checkbox"  class="checkbox" id="checkBox_id"/>
+                <label for="checkBox_id" class="checkbox-content"> I consent to PROCAL Systems, INC. processing my personal information as set out in the Privacy Policy and Cookie Policy and that, given the global nature of PROCAL’s business, such processing may take place outside of my home jurisdiction.*</label>
                 <p id="checkboxErrorMsg"></p>
             </div>
 
@@ -107,28 +113,29 @@
         </div>
 
         <div class="locations-section">
-            <div class="location">
+            <div class="location" id="northAmerica">
                 <img src="./images/america.jpg" alt="North America" class="location-img">
                 <h4 class="location-name">North America</h4>
             </div>
 
-            <div class="location">
+            <div class="location" id="europe">
                 <img src="./images/europe.jpg" alt="Europe" class="location-img">
                 <h4 class="location-name">Europe</h4>
             </div>
 
-            <div class="location">
+            <div class="location" id="asia">
                 <img src="./images/asia.jpg" alt="Asia" class="location-img">
                 <h4 class="location-name">Asia</h4>
             </div>
 
-            <div class="location">
+            <div class="location" id="middleEast">
                 <img src="./images/Middle-east.jpg" alt="Middle East" class="location-img">
                 <h4 class="location-name">Middle East</h4>
             </div>
         </div>
 
         <hr/>
+        <!--North America-->
             <div class="country-locations" id ="americaOffices">
                 <div class="Office-location">
                     <h4 class="location-name">New Jersey</h4>
@@ -160,6 +167,64 @@
                     </p>
                 </div>
                 
+            </div>
+
+        <!--Europe-->
+            <div class="country-locations" hidden id="europeOffices">
+                <div class="Office-location">
+                    <h4 class="location-name">Ireland</h4>
+                    <p class="office-address">31 Glentain Manor Upper Carnamuggah,</br>
+                        County Donegal</br>
+                        Ireland
+                    </p>
+                </div>
+                
+                <div class="Office-location">
+                    <h4 class="location-name">Germany</h4>
+                    <p class="office-address">Procaltech GmbH</br>
+                        c/o LETRIX Heubnerweg 7</br>
+                        14059 Berlin Germany
+                    </p>
+                </div>
+                
+                <div class="Office-location">
+                    <h4 class="location-name">Turkey</h4>
+                    <p class="office-address">Hakki Yeten Cad Selenium Plaza No: 10/1</br>
+                        Kat5-6, Fulya, Istanbul 34349</br>
+                        Turkey
+                    </p>
+                </div>
+                
+            </div>
+                
+        <!--Asia-->
+            <div class="country-locations" hidden id="asiaOffices">
+                <div class="Office-location">
+                    <h4 class="location-name">Mohali</h4>
+                    <p class="office-address">D 190 Industrial Area Sector 74, SAS Nagar</br>
+                        Punjab 160071</br>
+                        India
+                    </p>
+                    </div>
+                
+                <div class="Office-location">
+                    <h4 class="location-name">Hyderabad</h4>
+                    <p class="office-address">Shangrilla Plaza, Unit 407, Road No 2,
+                        </br> Banjarahills, Hyderabad, Telangana 500034
+                        </br> India
+                    </p>
+                </div>
+            </div>
+                
+        <!--Middle East-->
+            <div class="country-locations"id="middleEastOffices"  hidden>
+                <div class="Office-location">
+                    <h4 class="location-name">Dubai</h4>
+                    <p class="office-address">Savvy One Businesses Center, 25th Floor, 
+                        </br>The Citadel Tower, Business Bay, Sheikh 
+                        </br>Zayed Road, Dubai, UAE
+                    </p>
+                </div>
             </div>
     </div>
 
