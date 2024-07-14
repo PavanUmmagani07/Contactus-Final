@@ -1,12 +1,3 @@
-function showSidebar(){
-    const sidebar = document.querySelector('.sidebar')
-    sidebar.style.display='flex';
-}
-function hideSidebar(){
-    const sidebar = document.querySelector('.sidebar')
-    sidebar.style.display='none';
-}
-
 //FORM SECTION
 let formData={
     firstName:"",
@@ -129,7 +120,7 @@ function validateFormData(formData) {
 
 
 function submitFormData(){
-    let checkboxEl = document.getElementById('checkbox_id');
+    let checkboxEl = document.getElementById('checkBox_id');
     let checkboxErrorMsgEl = document.getElementById("checkboxErrorMsg");
     if(checkboxEl.checked===true){
         let options={
